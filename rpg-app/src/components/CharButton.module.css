@@ -1,0 +1,16 @@
+.char-button {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .delete-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 2px 5px;
+  }
+  

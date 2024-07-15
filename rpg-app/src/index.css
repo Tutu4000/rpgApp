@@ -1,0 +1,148 @@
+/* CHAR BUTTON */
+
+.characters {
+  background-color: #363636;
+  color: #e6e6e6;
+  display: flex;
+  width: 250px;
+  height: 90vh;
+  flex-direction: column;
+}
+
+.selected {
+  background-color: #363636;
+}
+.char-buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.char-buttons button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 1px;
+  border: 2px  #e6e6e6;
+}
+
+.delete-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(116, 67, 67);
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 2px 5px;
+}
+
+.start-button {
+  border-radius: 10px;
+  display: block;
+  width: 200px;
+  height: 60px;
+  margin: 20px auto;
+  font-size: 20px;
+
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.char-buttons button img {
+  border-radius: 50%;
+}
+
+.char-buttons button.active-button {
+  background-color: #505050;
+
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.char-buttons button:active {
+  transform: scale(0.98);
+  background-color: #484848;
+}
+
+.char-buttons button p {
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.char-buttons button .text-content {
+  text-align: left;
+}
+
+.char-thumbnail {
+  width: 50px;
+  height: 50px;
+}
+
+.char-buttons button img {
+  border-radius: 50%;
+  border: 3px solid #363636;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.character-sheet {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #000;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  width: 30%;
+}
+
+.input-group input,
+.input-group select {
+  width: 65%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
