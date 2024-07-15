@@ -186,6 +186,7 @@ export default function CharacterSheet({
               style={{ height: "100%" }}
               type="text"
               name="inventory"
+              value={character.inventory}
               onChange={handleChange}
             />
           </div>

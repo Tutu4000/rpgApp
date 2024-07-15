@@ -7,7 +7,7 @@ const NavBar = ({
   selectCharacter,
   selected,
   handleNewCharacter,
-  handleDeleteCharacter
+  handleDeleteCharacter,
 }) => {
   const handleExportCharacters = () => {
     const encodedCharacters = exportCharacters();
@@ -29,10 +29,10 @@ const NavBar = ({
     if (encodedCharacters) {
       importCharacters(encodedCharacters);
       alert("Characters imported successfully.");
+      location.reload();
+      
     }
   };
-
-
 
   return (
     <>
